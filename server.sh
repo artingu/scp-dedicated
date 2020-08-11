@@ -9,8 +9,8 @@
     +exit
 
 # copy config files
-cp /home/steam/config_gameplay.txt "/home/steam/.config/SCP Secret Laboratory/config/7777"
-cp /home/steam/config_remoteadmin.txt "/home/steam/.config/SCP Secret Laboratory/config/7777"
+mv /home/steam/config_gameplay.txt "/home/steam/.config/SCP Secret Laboratory/config/7777"
+mv /home/steam/config_remoteadmin.txt "/home/steam/.config/SCP Secret Laboratory/config/7777"
 
 
 # start the server

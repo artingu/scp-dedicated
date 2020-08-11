@@ -29,5 +29,8 @@ RUN ./steamcmd/steamcmd.sh +quit && \
     mkdir -pv /home/steam/.steam/sdk32/ && \
     ln -s /home/steam/steamcmd/linux32/steamclient.so /home/steam/.steam/sdk32/steamclient.so
 
+# install SCP: Secret Laboratory headless server from steam.
+RUN /home/steam/steamcmd/steamcmd.sh +login anonymous +force_install_dir /home/steam/server_data +app_update 996560 +exit
+
 # start the server main script
 ENTRYPOINT ["bash", "/home/steam/server.sh"]
